@@ -2,7 +2,6 @@
 id: client-emulator
 ---
 
-
 # Emulator
 
 Controller からの制御指示を受け取って、Controller に代わって特定の操作をゲームに対して行う。
@@ -13,4 +12,5 @@ DirectInput によるキーボード、マウス操作、物理外部デバイ�
 
 ## Emulators
 
--   [minecraft_emulator](./minecraft_emulator_seed/index.md)
+-   Minecraft
+    -   [Minecraft Seed Emulator](./minecraft/seed.md)

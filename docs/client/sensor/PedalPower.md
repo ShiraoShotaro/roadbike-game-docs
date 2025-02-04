@@ -1,3 +1,7 @@
+---
+id: client-sensor-pedalpower
+---
+
 # PedalPower
 
 ペダル型のパワーメータに関する型情報です.

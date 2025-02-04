@@ -1,3 +1,7 @@
+---
+id: client-sensor-minecraft-seed.md
+---
+
 # Minecraft Seed Sensor
 
 Seed はただのコードネーム。バージョンみたいなもの。

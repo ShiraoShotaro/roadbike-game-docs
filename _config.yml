@@ -13,7 +13,22 @@ sidebar:
           - design-events
     - label: クライアント
       children:
-          - client-sensor
-          - client-controller
-          - client-emulator
-          - client-display
+          - label: Sensor
+            children:
+                - client-sensor
+                - client-sensor-pedalpower
+                - label: Minecraft
+                  children:
+                      - client-sensor-minecraft-seed
+          - label: Controller
+            children:
+                - client-controller
+          - label: Emulator
+            children:
+                - client-emulator
+                - label: Minecraft
+                  children:
+                      - client-emulator-minecraft-seed
+          - label: Display
+            children:
+                - client-display

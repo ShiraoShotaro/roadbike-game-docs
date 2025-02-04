@@ -46,7 +46,7 @@ assert(resp == resp2)
 
 基本的には Websocket に繋ぐだけ
 
-接続を確立したときに、 ClientID を Websocket 側から送信します。
+接続を確立したときに、 ClientID をサーバー側から送信します。
 
 ```json
 {

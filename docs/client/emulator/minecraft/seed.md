@@ -1,3 +1,7 @@
+---
+id: client-emulator-minecraft-seed
+---
+
 # Minecraft Emulator "Seed"
 
 マインクラフトの MOD によるエミュレータ。
