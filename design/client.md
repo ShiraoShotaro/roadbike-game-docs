@@ -6,8 +6,8 @@ id: design-client
 
 サーバーに接続するアプリケーションのことです。
 
--   TOC
-    {:toc}
+* TOC
+{:toc}
 
 ## クライアント ID
 

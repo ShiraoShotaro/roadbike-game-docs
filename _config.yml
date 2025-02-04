@@ -13,9 +13,9 @@ sidebar:
           - design-events
     - label: クライアント
       children:
+          - client-sensor
           - label: Sensor
             children:
-                - client-sensor
                 - client-sensor-pedalpower
                 - label: Minecraft
                   children:

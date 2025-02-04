@@ -18,6 +18,9 @@ id: design-events
 
 サーバーからクライアントへの通信では, 必ず `event` キーが含まれます.
 
+* TOC
+{:toc}
+
 ## new_client
 
 **全てのクライアントへ送信**

@@ -25,6 +25,9 @@ id: design-commands
 { "response": "<command>" }
 ```
 
+* TOC
+{:toc}
+
 ## hello
 
 **全てのクライアントが必ず 1 回送信**
