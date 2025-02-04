@@ -8,6 +8,8 @@ sidebar:
       children:
           - design-client
           - design-config
+          - design-data
+          - design-execute-command
           - design-connection
           - design-commands
           - design-events
@@ -20,15 +22,3 @@ sidebar:
                 - label: Minecraft
                   children:
                       - client-sensor-minecraft-seed
-          - label: Commander
-            children:
-                - client-commander
-          - label: Executor
-            children:
-                - client-executor
-                - label: Minecraft
-                  children:
-                      - client-executor-minecraft-seed
-          - label: Display
-            children:
-                - client-display
