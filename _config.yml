@@ -1,10 +1,11 @@
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 title: Roadbike-Game Docs
 description: Documents
-auto_page_title: true
+auto_page_title: false
 sidebar:
+  - top
   - label: Design
     children:
-      - client-mode
-      - commands
-      - events
+      - design-client-mode
+      - design-commands
+      - design-events

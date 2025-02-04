@@ -1,3 +1,7 @@
+---
+id: top
+---
+
 # Roadbike-Game Documentation
 
 けんこうだいいち。
