@@ -6,8 +6,23 @@ id: top
 
 けんこうだいいち。
 
-* TOC
-{:toc}
+## 構造
+
+このシステムは、ひとつのサーバーと 4 つのクライアントタイプで構成されます。
+
+![a](entities.svg)
+
+### Server
+
+全てのクライアントが接続するサーバー。
+TCP Server / Websocket Server / HTTP Server を提供します。
+
+サーバー/クライアントとの通信には TCP Socket か Websocket が利用できます。
+HTTP Server はデバッグ用途と、デバッグ用の Debug Website のサーブ用に用意されています。
+
+### Sensor
+
+様々なデータを Publish するクライアント。クライアントからサーバーへのデータ送信が主な役目です。
 
 ## ClientID
 
