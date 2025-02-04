@@ -1,5 +1,5 @@
 ---
-id: client-sensor-minecraft-seed.md
+id: client-sensor-minecraft-seed
 ---
 
 # Minecraft Seed Sensor

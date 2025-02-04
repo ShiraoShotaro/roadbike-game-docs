@@ -36,7 +36,7 @@ Sensor から送られてきたデータを元に操作を決定し、 Executor 
 
 Commander から送られてきた操作指示から、実際に操作を行います。
 
-[Executor クライアント一覧はこちら](client/emulator/index.md)
+[Executor クライアント一覧はこちら](client/executor/index.md)
 
 ### Display
 

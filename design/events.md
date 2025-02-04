@@ -4,10 +4,9 @@ id: design-events
 
 # イベント
 
-> [!IMPORTANT]
-> すべて `\0` null terminate された json 文字列をやり取りします.
-
 サーバーからクライアントへ送信するコマンドです。
+
+すべて `\0` null terminate された json 文字列をやり取りします.
 
 このコマンドの json には、必ず `event` キーを含みます。
 
@@ -97,33 +96,33 @@ id: design-events
 
 ここで受信できるデータは, クライアントが通知したデータと同じもので, 差分の可能性のあるデータです. 完全データを取得する場合は, 別途 `request_fulldata` コマンドを利用します.
 
-## emulate
+## execute
 
-**emulator, display モードのクライアントへ送信**
+**executor, display モードのクライアントへ送信**
 
-主に controller モードのクライアントから `emulate` コマンドを受信したときに, サーバーから, 指定されたクライアント ID の emulator と, すべての display デバイスに対して操作要求を転送します.
+主に controller モードのクライアントから `execute` コマンドを受信したときに, サーバーから, 指定されたクライアント ID の executor と, すべての display デバイスに対して操作要求を転送します.
 
 ```json
 {
-    "event": "emulate",
+    "event": "execute",
     "user": "<user>",
-    "emulate": [<EmulateCommands>]
+    "emulate": [<ExecuteCommand>]
 }
 ```
 
-`EmulateCommands` については, EmulateCommands の章を参照してください.
+`ExecuteCommand` については, ExecuteCommand の章を参照してください. // TODO:
 
-## emulated
+## executed
 
 **display モードのクライアントへ送信**
 
-主に emulator モードのクライアントが, 実際に操作を実行した後に `emulated` コマンドを発行します.
-それを受け取ったサーバーは, この `emulated` イベントを, すべての display デバイスに対して送信します.
+主に executor モードのクライアントが, 実際に操作を実行した後に `executed` コマンドを発行します.
+それを受け取ったサーバーは, この `executed` イベントを, すべての display デバイスに対して送信します.
 
 ```json
 {
-    "event": "emulated",
+    "event": "executed",
     "clientID": <clientID>,
-    "emulated": [<EmulatedCommands>]
+    "emulated": [<ExecutedCommands>]
 }
 ```

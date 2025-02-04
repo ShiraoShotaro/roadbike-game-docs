@@ -4,10 +4,9 @@ id: design-commands
 
 # コマンド
 
-> [!IMPORTANT]
-> すべて `\0` null terminate された json 文字列をやり取りします.
-
 クライアントからサーバーへ送信するコマンドです。
+
+すべて `\0` null terminate された json 文字列をやり取りします.
 
 このコマンドの json には、必ず `cmd` キーを含みます。
 
@@ -206,39 +205,39 @@ display, controller モードのクライアントが, 接続後にデータを�
 }
 ```
 
-## emulate
+## execute
 
 **controller モードのクライアントが, 操作を指示するときに送信**
 
-指定したユーザーの emulate モードのクライアントに対して, 操作を要求します.
+指定したユーザーの execute モードのクライアントに対して, 操作を要求します.
 
 ```json
 {
-    "cmd": "emulate",
+    "cmd": "execute",
     "user": "<user>",
-    "emulate": [<EmulateCommands>]
+    "execute": [<ExecuteCommands>]
 }
 ```
 
-`EmulateCommands` については, EmulateCommands の章を参照してください.
+`ExecuteCommands` については, ExecuteCommands の章を参照してください.
 
-このコマンドを受けたサーバーは, emulator, display モードのクライアントに対して `emulate` イベントを送信します. TX/emulate の項を参照してください.
+このコマンドを受けたサーバーは, executor, display モードのクライアントに対して `emulate` イベントを送信します. TX/emulate の項を参照してください.
 
 ## emulated
 
-**emulator モードのクライアントが, 操作を完了したときに送信**
+**executor モードのクライアントが, 操作を完了したときに送信**
 
-emulate モードのクライアントが送信します.
+executor モードのクライアントが送信します.
 
-`emulate` イベントによって操作要求をされた emulate モードのクライアントが, そのスケジュールにしたがって実際に操作を行ったときに送信されます.
+`execute` イベントによって操作要求をされた executor モードのクライアントが, そのスケジュールにしたがって実際に操作を行ったときに送信されます.
 
 ```json
 {
-    "cmd": "emulated",
+    "cmd": "executed",
     "emulated": [<EmulatedCommands>]
 }
 ```
 
-このデータは, （ほぼ）同時に実行された操作を表した `EmulateCommands` が含まれます.
+このデータは, （ほぼ）同時に実行された操作を表した `ExecutedCommands` が含まれます.
 
-このコマンドを受け取ったサーバーは, すべての display モードのクライアントに対して `emulated` イベントを送信します.
+このコマンドを受け取ったサーバーは, すべての display モードのクライアントに対して `executed` イベントを送信します.

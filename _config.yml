@@ -20,15 +20,15 @@ sidebar:
                 - label: Minecraft
                   children:
                       - client-sensor-minecraft-seed
-          - label: Controller
+          - label: Commander
             children:
-                - client-controller
-          - label: Emulator
+                - client-commander
+          - label: Executor
             children:
-                - client-emulator
+                - client-executor
                 - label: Minecraft
                   children:
-                      - client-emulator-minecraft-seed
+                      - client-executor-minecraft-seed
           - label: Display
             children:
                 - client-display

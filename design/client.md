@@ -45,9 +45,9 @@ Controller が出す指示の宛先として利用されます。
 
 ## クライアントモード
 
-| mode       | uint8 value | description                                                           |
-| ---------- | ----------- | --------------------------------------------------------------------- |
-| sensor     | 0           | センサー. ANT+ センサーや HID など.                                   |
-| controller | 1           | コントローラ. センサーの値をもとにゲームをコントロールするプログラム. |
-| emulator   | 2           | アウトプット. ゲームに対して入力をエミュレートする.                   |
-| display    | 3           | ディスプレイ. UI など.                                                |
+| mode      | uint8 value | description                                                                                       |
+| --------- | ----------- | ------------------------------------------------------------------------------------------------- |
+| sensor    | 0           | [Sensor](../client/sensor/index.md) ANT+ センサーや HID など.                                     |
+| commander | 1           | [Commander](../client/commander/index.md) センサーの値をもとにゲームをコントロールするプログラム. |
+| executor  | 2           | [Executor](../client/executor/index.md) 指示に基づいて実行する.                                   |
+| display   | 3           | [Display](../client/display/) ディスプレイ. UI など.                                              |

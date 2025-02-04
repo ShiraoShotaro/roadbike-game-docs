@@ -1,8 +1,8 @@
 ---
-id: client-emulator-minecraft-seed
+id: client-executor-minecraft-seed
 ---
 
-# Minecraft Emulator "Seed"
+# Minecraft Executor "Seed"
 
 マインクラフトの MOD によるエミュレータ。
 

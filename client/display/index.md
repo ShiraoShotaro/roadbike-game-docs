@@ -1,7 +1,6 @@
 ---
-id: client-controller
+id: client-display
 ---
-
 
 # Display
 
