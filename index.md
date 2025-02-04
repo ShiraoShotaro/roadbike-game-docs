@@ -4,7 +4,7 @@ id: top
 
 # Roadbike-Game Documentation
 
-**_けんこうだいいち。_**
+![けんこうだいいち](image.png)
 
 * TOC
 {:toc}

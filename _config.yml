@@ -13,24 +13,18 @@ sidebar:
           - design-connection
           - design-commands
           - design-events
-    - label: クライアント
+    - label: Sensor クライアント
       children:
           - client-sensor
-          - label: Sensors
-            children:
-                - client-sensor-pedalpower
-                - label: Minecraft
-                  children:
-                      - client-sensor-minecraft-seed
-          - label: Commanders
-            children:
-                - client-commander
-          - label: Executors
-            children:
-                - client-executor
-                - label: Minecraft
-                  children:
-                      - client-executor-minecraft-seed
-          - label: Displays
-            children:
-                - client-display
+          - client-sensor-pedalpower
+          - client-sensor-minecraft-seed
+    - label: Commander クライアント
+      children:
+          - client-commander
+    - label: Executor クライアント
+      children:
+          - client-executor
+          - client-executor-minecraft-seed
+    - label: Display クライアント
+      children:
+          - client-display
