@@ -1,0 +1,7 @@
+sidebar:
+    - getting-started
+    - label: Dev Docs
+      children:
+          - doc-1
+          - doc-2
+    - deployment
