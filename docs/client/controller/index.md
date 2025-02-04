@@ -1,3 +1,7 @@
+---
+id: client-controller
+---
+
 # Controller
 
 センサーからの値を受け取ってゲームの操作を考えるクライアント。

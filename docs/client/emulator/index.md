@@ -1,3 +1,8 @@
+---
+id: client-emulator
+---
+
+
 # Emulator
 
 Controller からの制御指示を受け取って、Controller に代わって特定の操作をゲームに対して行う。

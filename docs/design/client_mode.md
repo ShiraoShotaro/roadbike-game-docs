@@ -1,3 +1,0 @@
----
-id: design-client-mode
----

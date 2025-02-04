@@ -2,6 +2,6 @@
 id: design-commands
 ---
 
-# Commands
+# コマンド
 
 クライアントからサーバーへ送信するコマンド。

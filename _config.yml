@@ -4,8 +4,15 @@ description: Documents
 auto_page_title: false
 sidebar:
   - top
-  - label: Design
+  - label: デザイン
     children:
-      - design-client-mode
+      - design-client
+      - design-tcp-connection
       - design-commands
       - design-events
+  - label: クライアント
+    children:
+      - client-sensor
+      - client-controller
+      - client-emulator
+      - client-display
