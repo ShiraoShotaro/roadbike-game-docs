@@ -2,8 +2,8 @@
 
 けんこうだいいち。
 
--   TOC
-    {:toc}
+* TOC
+{:toc}
 
 ## ClientID
 
