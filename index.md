@@ -52,7 +52,7 @@ Sensor, Commander, Executor でやりとりされるデータから、何かし�
 
 実装周りのリポジトリは現在全て Private です。
 
-### Roadbike-Game
+### roadbike-game
 
 このシステムを実装しているリポジトリです。
 

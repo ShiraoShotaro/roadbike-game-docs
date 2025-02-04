@@ -16,9 +16,21 @@ sidebar:
     - label: クライアント
       children:
           - client-sensor
-          - label: Sensor
+          - label: Sensors
             children:
                 - client-sensor-pedalpower
                 - label: Minecraft
                   children:
                       - client-sensor-minecraft-seed
+          - label: Commanders
+            children:
+                - client-commander
+          - label: Executors
+            children:
+                - client-executor
+                - label: Minecraft
+                  children:
+                      - client-executor-minecraft-seed
+          - label: Displays
+            children:
+                - client-display
