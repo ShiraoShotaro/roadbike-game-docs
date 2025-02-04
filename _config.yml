@@ -3,16 +3,17 @@ title: Roadbike-Game Docs
 description: Documents
 auto_page_title: false
 sidebar:
-  - top
-  - label: デザイン
-    children:
-      - design-client
-      - design-tcp-connection
-      - design-commands
-      - design-events
-  - label: クライアント
-    children:
-      - client-sensor
-      - client-controller
-      - client-emulator
-      - client-display
+    - top
+    - label: デザイン
+      children:
+          - design-client
+          - design-config
+          - design-connection
+          - design-commands
+          - design-events
+    - label: クライアント
+      children:
+          - client-sensor
+          - client-controller
+          - client-emulator
+          - client-display

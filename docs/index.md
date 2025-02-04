@@ -4,7 +4,7 @@ id: top
 
 # Roadbike-Game Documentation
 
-けんこうだいいち。
+**_けんこうだいいち。_**
 
 ## 構造
 
@@ -23,6 +23,31 @@ HTTP Server はデバッグ用途と、デバッグ用の Debug Website のサ�
 ### Sensor
 
 様々なデータを Publish するクライアント。クライアントからサーバーへのデータ送信が主な役目です。
+
+[Sensor クライアント一覧はこちら](client/sensor/index.md)
+
+### Commander
+
+Sensor から送られてきたデータを元に操作を決定し、 Executor に操作を伝える、指示役です。
+
+[Commander クライアント一覧はこちら](client/controller/index.md)
+
+### Executor
+
+Commander から送られてきた操作指示から、実際に操作を行います。
+
+[Executor クライアント一覧はこちら](client/emulator/index.md)
+
+### Display
+
+Sensor, Commander, Executor でやりとりされるデータから、何かしらの表示を行うクライアントです。
+具体的にはデバッグ向け UI や、配信・動画向けの UI クライアントとして使われます。
+
+[Display クライアント一覧はこちら](client/display/index.md)
+
+## リポジトリ
+
+実装周りのリポジトリは現在全て Private です。
 
 ## ClientID
 
