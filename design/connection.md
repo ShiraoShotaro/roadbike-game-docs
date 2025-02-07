@@ -56,24 +56,6 @@ assert(resp == resp2)
 
 ## （番外） HTTP Server
 
-デバッグ向けに使用できる RestAPI と、デバッグ用の WebPage を用意しています。
+~~デバッグ向けに使用できる RestAPI と、デバッグ用の WebPage を用意しています。~~
 
-利用できる API エンドポイントは以下の通りです。
-
-詳しくはサーバーのコードを見てくだしあ。
-
-### GET /api/clients
-
-現在サーバーが認識しているクライアント一覧を取得します。
-
-### GET /api/client/{ClientID}
-
-ClientID を指定して、特定のクライアントについての情報を取得します
-
-### GET /api/config/{ClientID}
-
-ClientID を指定して、特定のクライアントの config について取得します。
-
-### POST /api/config/{ClientID}
-
-ClientID を指定して、特定のクライアントの config を更新します。
+API Server の使いどころが無かった（Web Debug Panel が良い感じに動く）ので、 RestAPI は廃止し、Web Debug Panel を Serve するだけの HTTP Server となりました。
