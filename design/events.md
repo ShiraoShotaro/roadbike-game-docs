@@ -30,23 +30,27 @@ id: design-events
 ```json
 {
     "event": "new_client",
-    "user": "<user>",
-    "mode": <mode>,
-    "dataClassType": <DataClassType>,
-    "addr": "<address>",
-    "clientID": <clientID>
+    "info": {
+        "user": "<user>",
+        "mode": <mode>,
+        "label": "<label>",
+        "addr": "<address>",
+        "clientID": <clientID>,
+        "config": [<ConfigValueDescription>]
+    }
 }
 ```
 
-| key           | type     | value                                                                                                             |
-| ------------- | -------- | ----------------------------------------------------------------------------------------------------------------- |
-| user          | `string` | [クライアントユーザ名](client.md#クライアントユーザー)                                                            |
-| mode          | `uint8`  | [クライアントモード](client.md#クライアントモード)                                                                |
-| dataClassType | `uint16` | データクラスタイプ                                                                                                |
-| addr          | `string` | 識別のためのアドレス. このアドレスは表示のためのもので, ほかのオペレーションにおいてこの値を使うことはありません. |
-| clientID      | `uint32` | クライアント固有の ID. ほかのオペレーションでクライアントを指定するときに利用します.                              |
+### info について
 
-この時, クライアントに対し設定可能な `config` は送信されません. 必要に応じて, 別途 `request_config` コマンドで問い合わせます.
+| key      | type                       | value                                                       |
+| -------- | -------------------------- | ----------------------------------------------------------- |
+| clientID | `uint32`                   | クライアント固有の ID. ほかのオペレーションでクライアントを指定するときに利用します.               |
+| user     | `string`                   | [クライアントユーザ名](client.md#クライアントユーザー)                          |
+| mode     | `uint8`                    | [クライアントモード](client.md#クライアントモード)                            |
+| label    | `string`                   | クライアントのラベル                                                  |
+| addr     | `string`                   | 識別のためのアドレス. このアドレスは表示のためのもので, ほかのオペレーションにおいてこの値を使うことはありません. |
+| config   | `ConfigValueDescription[]` | Config Value Descriptions                                   |
 
 ## leave_client
 
@@ -77,8 +81,6 @@ id: design-events
 ```
 
 受け取った値でコンフィグを更新します.
-
-また必要に応じて, ファイルに書き出して記憶するなど行ってください.
 
 ## update_data
 
@@ -113,7 +115,7 @@ id: design-events
 }
 ```
 
-`ExecuteCommand` については, ExecuteCommand の章を参照してください. // TODO:
+`ExecuteCommand` については, [ExecuteCommand](./execute_command.md) の章を参照してください. // TODO:
 
 ## executed
 

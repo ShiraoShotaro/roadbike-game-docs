@@ -17,6 +17,7 @@ sidebar:
       children:
           - client-sensor
           - client-sensor-pedalpower
+          - client-sensor-hid-keyboard
           - client-sensor-minecraft-seed
     - label: Commander クライアント
       children:
@@ -24,7 +25,9 @@ sidebar:
     - label: Executor クライアント
       children:
           - client-executor
+          - client-executor-execute_debug
           - client-executor-minecraft-seed
     - label: Display クライアント
       children:
           - client-display
+          - client-display-debug_web_panel

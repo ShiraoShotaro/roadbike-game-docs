@@ -8,17 +8,17 @@ Seed はただのコードネーム。バージョンみたいなもの。
 
 ## Config
 
+| key          | type  | nullable | default value | desc                       |
+| ------------ | ----- | -------- | ------------- | -------------------------- |
+| \_class      | `int` | no       | `0x0100`      | クラス ID                  |
+| tickInterval | `int` | no       | `5`           | データ送信を行う Tick 間隔 |
+
 ```json
 {
     "_class": 256,
     "tickInterval": 5
 }
 ```
-
-| key          | type  | nullable | default value | desc                       |
-| ------------ | ----- | -------- | ------------- | -------------------------- |
-| \_class      | `int` | no       | `0x0100`      | クラス ID                  |
-| tickInterval | `int` | no       | `5`           | データ送信を行う Tick 間隔 |
 
 ## Data
 

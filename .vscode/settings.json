@@ -1,3 +1,10 @@
 {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "markdownlint.config": {
+        "default": true
+    },
+    "text-tables.mode": "markdown"
 }

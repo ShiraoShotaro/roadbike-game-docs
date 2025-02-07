@@ -4,4 +4,4 @@ id: design-config
 
 # クライアントの Config
 
-まだかいてない
+執筆中
